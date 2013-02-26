@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="88">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f4" displayName="BoostASIOConnections" projectFiles="true">
+      <itemPath>BoostAsioConnections/BasicConnection.h</itemPath>
+      <itemPath>BoostAsioConnections/ClientConnection.h</itemPath>
+      <itemPath>BoostAsioConnections/IClientConnectionHandler.h</itemPath>
+      <itemPath>BoostAsioConnections/IConnectionHandler.h</itemPath>
+      <itemPath>BoostAsioConnections/MemberAccessorFunctor.h</itemPath>
+      <itemPath>BoostAsioConnections/Server.h</itemPath>
+      <itemPath>BoostAsioConnections/ServerConnection.h</itemPath>
+      <itemPath>BoostAsioConnections/SyncWriteConnection.h</itemPath>
+      <itemPath>TempLogger.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f1" displayName="Connectionless" projectFiles="true">
+      <logicalFolder name="f1" displayName="Header Files" projectFiles="true">
+        <itemPath>AsyncConnectionlessComms.h</itemPath>
+        <itemPath>AsyncConnectionlessCommsImpl.h</itemPath>
+        <itemPath>AsyncConnectionlessReceiver.h</itemPath>
+        <itemPath>AsyncConnectionlessSender.h</itemPath>
+        <itemPath>ConnectionlessComms.h</itemPath>
+        <itemPath>ConnectionlessCommsImpl.h</itemPath>
+        <itemPath>SyncConnectionlessComms.h</itemPath>
+        <itemPath>SyncConnectionlessCommsImpl.h</itemPath>
+        <itemPath>SyncConnectionlessReceiver.h</itemPath>
+        <itemPath>SyncConnectionlessSender.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="Multicast" projectFiles="true">
+        <logicalFolder name="f1" displayName="Header Files" projectFiles="true">
+          <itemPath>AsyncMulticastComms.h</itemPath>
+          <itemPath>AsyncMulticastCommsImpl.h</itemPath>
+          <itemPath>AsyncMulticastReceiver.h</itemPath>
+          <itemPath>AsyncMulticastSender.h</itemPath>
+          <itemPath>SyncMulticastComms.h</itemPath>
+          <itemPath>SyncMulticastCommsImpl.h</itemPath>
+          <itemPath>SyncMulticastReceiver.h</itemPath>
+          <itemPath>SyncMulticastSender.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="Source Files" projectFiles="true">
+          <itemPath>AsyncMulticastComms.cpp</itemPath>
+          <itemPath>AsyncMulticastCommsImpl.cpp</itemPath>
+          <itemPath>AsyncMulticastReceiver.cpp</itemPath>
+          <itemPath>AsyncMulticastSender.cpp</itemPath>
+          <itemPath>SyncMulticastComms.cpp</itemPath>
+          <itemPath>SyncMulticastCommsImpl.cpp</itemPath>
+          <itemPath>SyncMulticastReceiver.cpp</itemPath>
+          <itemPath>SyncMulticastSender.cpp</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="Source Files" projectFiles="true">
+        <itemPath>AsyncConnectionlessReceiver.cpp</itemPath>
+        <itemPath>AsyncConnectionlessSender.cpp</itemPath>
+        <itemPath>SyncConnectionlessReceiver.cpp</itemPath>
+        <itemPath>SyncConnectionlessSender.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="UDP" projectFiles="true">
+        <logicalFolder name="f1" displayName="Header Files" projectFiles="true">
+          <itemPath>AsyncUDPComms.h</itemPath>
+          <itemPath>AsyncUDPCommsImpl.h</itemPath>
+          <itemPath>AsyncUDPReceiver.h</itemPath>
+          <itemPath>AsyncUDPSender.h</itemPath>
+          <itemPath>SyncUDPComms.h</itemPath>
+          <itemPath>SyncUDPCommsImpl.h</itemPath>
+          <itemPath>SyncUDPReceiver.h</itemPath>
+          <itemPath>SyncUDPSender.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="Source Files" projectFiles="true">
+          <itemPath>AsyncUDPComms.cpp</itemPath>
+          <itemPath>AsyncUDPCommsImpl.cpp</itemPath>
+          <itemPath>AsyncUDPReceiver.cpp</itemPath>
+          <itemPath>AsyncUDPSender.cpp</itemPath>
+          <itemPath>SyncUDPComms.cpp</itemPath>
+          <itemPath>SyncUDPCommsImpl.cpp</itemPath>
+          <itemPath>SyncUDPReceiver.cpp</itemPath>
+          <itemPath>SyncUDPSender.cpp</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>EthernetCommsAPI.h</itemPath>
+      <itemPath>EthernetCommsModule.h</itemPath>
+      <itemPath>Resource.h</itemPath>
+      <itemPath>stdafx.h</itemPath>
+      <itemPath>targetver.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>res/EthernetCommsLibrary.rc</itemPath>
+      <itemPath>EthernetCommsModule.rc</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>EthernetCommsModule.cpp</itemPath>
+      <itemPath>stdafx.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f2" displayName="TCP" projectFiles="true">
+      <logicalFolder name="f3" displayName="Client" projectFiles="true">
+        <logicalFolder name="f1" displayName="Header Files" projectFiles="true">
+          <itemPath>AsyncTCPComms.h</itemPath>
+          <itemPath>AsyncTCPCommsSendRecv.h</itemPath>
+          <itemPath>SyncTCPComms.h</itemPath>
+          <itemPath>SyncTCPCommsSendRecv.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="Source Files" projectFiles="true">
+          <itemPath>AsyncTCPComms.cpp</itemPath>
+          <itemPath>AsyncTCPCommsSendRecv.cpp</itemPath>
+          <itemPath>SyncTCPComms.cpp</itemPath>
+          <itemPath>SyncTCPCommsSendRecv.cpp</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="Header Files" projectFiles="true">
+        <itemPath>TCPComms.h</itemPath>
+        <itemPath>TCPCommsImpl.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="Server" projectFiles="true">
+        <logicalFolder name="f1" displayName="Header Files" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="Source Files" projectFiles="true">
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="Source Files" projectFiles="true">
+        <itemPath>TCPComms.cpp</itemPath>
+        <itemPath>TCPCommsImpl.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="f3" displayName="Utilities" projectFiles="true">
+      <logicalFolder name="f1" displayName="Header Files" projectFiles="true">
+        <itemPath>CommsUtilities.h</itemPath>
+        <itemPath>NetworkUtilities.h</itemPath>
+        <itemPath>WinAssert.h</itemPath>
+        <itemPath>WinTrace.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="Source Files" projectFiles="true">
+        <itemPath>CommsUtilities.cpp</itemPath>
+        <itemPath>NetworkUtilities.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug_MinGW" type="2">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>BoostAsioConnections</pElem>
+            <pElem>../../Third_Party/Libraries/Boost/include/boost-1_53</pElem>
+            <pElem>.</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>BOOST_DISABLE_ASSERTS</Elem>
+            <Elem>BOOST_ENABLE_ASSERT_HANDLER</Elem>
+            <Elem>BOOST_THREAD_USE_LIB</Elem>
+            <Elem>ETHERNETCOMMS_EXPORTS</Elem>
+            <Elem>NO_MFC</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libSentelEthernetCommsLibrary.${CND_DLIB_EXT}</output>
+          <linkerAddLib>
+            <pElem>../../Third_Party/Libraries/Boost/lib</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>boost_system-mgw47-mt-sd-1_53</linkerLibLibItem>
+            <linkerLibLibItem>boost_thread-mgw47-mt-sd-1_53</linkerLibLibItem>
+            <linkerOptionItem>-static</linkerOptionItem>
+            <linkerOptionItem>-lws2_32</linkerOptionItem>
+            <linkerOptionItem>build/${CND_CONF}/${CND_PLATFORM}/EthernetCommsLibrary.o</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="AsyncConnectionlessComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncTCPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncTCPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncTCPCommsSendRecv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncTCPCommsSendRecv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/BasicConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/ClientConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/IClientConnectionHandler.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/IConnectionHandler.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/MemberAccessorFunctor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/Server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/ServerConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/SyncWriteConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="CommsUtilities.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CommsUtilities.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ConnectionlessComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ConnectionlessCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EthernetCommsAPI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EthernetCommsModule.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EthernetCommsModule.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EthernetCommsModule.rc" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NetworkUtilities.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NetworkUtilities.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resource.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncTCPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncTCPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncTCPCommsSendRecv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncTCPCommsSendRecv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TCPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TCPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TCPCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TCPCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TempLogger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="WinAssert.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="WinTrace.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/EthernetCommsLibrary.rc" ex="false" tool="3" flavor2="0">
+        <customTool>
+          <customToolCommandline>windres.exe --use-temp-file -I../../Third_Party/Libraries/wxWidgets/wxWidgets-2.8.12/include -ires/EthernetCommsLibrary.rc -obuild/${CND_CONF}/${CND_PLATFORM}/EthernetCommsLibrary.o</customToolCommandline>
+          <customToolDescription>Building Resource File...</customToolDescription>
+          <customToolOutputs>build/${CND_CONF}/${CND_PLATFORM}/EthernetCommsLibrary.o</customToolOutputs>
+        </customTool>
+      </item>
+      <item path="stdafx.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="stdafx.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="targetver.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Debug_GCC" type="2">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>GNU|GNU</compilerSet>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>BoostAsioConnections</pElem>
+            <pElem>../../Third_Party/Libraries/Boost/include/boost-1_53</pElem>
+            <pElem>.</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>BOOST_DISABLE_ASSERTS</Elem>
+            <Elem>BOOST_ENABLE_ASSERT_HANDLER</Elem>
+            <Elem>BOOST_THREAD_USE_LIB</Elem>
+            <Elem>ETHERNETCOMMS_EXPORTS</Elem>
+            <Elem>NO_MFC</Elem>
+            <Elem>_DEBUG</Elem>
+            <Elem>_LINUX_</Elem>
+          </preprocessorList>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>../../Third_Party/Libraries/Boost/lib</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>boost_system</linkerLibLibItem>
+            <linkerLibLibItem>boost_thread</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="AsyncConnectionlessComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncTCPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncTCPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncTCPCommsSendRecv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncTCPCommsSendRecv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/BasicConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/ClientConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/IClientConnectionHandler.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/IConnectionHandler.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/MemberAccessorFunctor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/Server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/ServerConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/SyncWriteConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="CommsUtilities.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CommsUtilities.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ConnectionlessComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ConnectionlessCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EthernetCommsAPI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EthernetCommsModule.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EthernetCommsModule.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EthernetCommsModule.rc" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NetworkUtilities.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NetworkUtilities.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resource.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncTCPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncTCPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncTCPCommsSendRecv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncTCPCommsSendRecv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TCPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TCPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TCPCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TCPCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TempLogger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="WinAssert.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="WinTrace.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/EthernetCommsLibrary.rc" ex="false" tool="3" flavor2="0">
+        <customTool>
+          <customToolCommandline>windres.exe --use-temp-file -I../../Third_Party/Libraries/wxWidgets/wxWidgets-2.8.11/include -iEthernetCommsLibrary.rc -obuild/${CND_CONF}/${CND_PLATFORM}/EthernetCommsLibrary.o</customToolCommandline>
+          <customToolDescription>Building Resource File...</customToolDescription>
+          <customToolOutputs>build/${CND_CONF}/${CND_PLATFORM}/EthernetCommsLibrary.o</customToolOutputs>
+        </customTool>
+      </item>
+      <item path="stdafx.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="stdafx.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="targetver.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release_MinGW" type="2">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="AsyncConnectionlessComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncTCPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncTCPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncTCPCommsSendRecv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncTCPCommsSendRecv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/BasicConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/ClientConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/IClientConnectionHandler.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/IConnectionHandler.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/MemberAccessorFunctor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/Server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/ServerConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/SyncWriteConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="CommsUtilities.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CommsUtilities.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ConnectionlessComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ConnectionlessCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EthernetCommsAPI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EthernetCommsModule.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EthernetCommsModule.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EthernetCommsModule.rc" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NetworkUtilities.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NetworkUtilities.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resource.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncTCPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncTCPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncTCPCommsSendRecv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncTCPCommsSendRecv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TCPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TCPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TCPCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TCPCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TempLogger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="WinAssert.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="WinTrace.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/EthernetCommsLibrary.rc" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="stdafx.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="stdafx.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="targetver.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release_GCC" type="2">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>GNU|GNU</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="AsyncConnectionlessComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncConnectionlessSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncMulticastSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncMulticastSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncTCPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncTCPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncTCPCommsSendRecv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncTCPCommsSendRecv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AsyncUDPSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AsyncUDPSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/BasicConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/ClientConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/IClientConnectionHandler.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/IConnectionHandler.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/MemberAccessorFunctor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/Server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/ServerConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="BoostAsioConnections/SyncWriteConnection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="CommsUtilities.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CommsUtilities.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ConnectionlessComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ConnectionlessCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EthernetCommsAPI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EthernetCommsModule.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EthernetCommsModule.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EthernetCommsModule.rc" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NetworkUtilities.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NetworkUtilities.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resource.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncConnectionlessSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncMulticastSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncMulticastSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncTCPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncTCPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncTCPCommsSendRecv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncTCPCommsSendRecv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SyncUDPSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SyncUDPSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TCPComms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TCPComms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TCPCommsImpl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TCPCommsImpl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TempLogger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="WinAssert.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="WinTrace.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/EthernetCommsLibrary.rc" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="stdafx.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="stdafx.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="targetver.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
