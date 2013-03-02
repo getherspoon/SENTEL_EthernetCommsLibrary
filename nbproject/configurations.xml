@@ -178,7 +178,7 @@
           </preprocessorList>
         </ccTool>
         <linkerTool>
-          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libSentelEthernetCommsLibrary.${CND_DLIB_EXT}</output>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libEthernetComms_D.${CND_DLIB_EXT}</output>
           <linkerAddLib>
             <pElem>../../Third_Party/Libraries/Boost/lib</pElem>
           </linkerAddLib>
@@ -392,7 +392,7 @@
         <ccTool>
           <incDir>
             <pElem>BoostAsioConnections</pElem>
-            <pElem>../../Third_Party/Libraries/Boost/include/boost_1_53_0</pElem>
+            <pElem>/../../Third_Party/Libraries/Boost/include/boost_1_53_0</pElem>
             <pElem>.</pElem>
           </incDir>
           <preprocessorList>
@@ -407,7 +407,7 @@
         </ccTool>
         <linkerTool>
           <linkerAddLib>
-            <pElem>../../Third_Party/Libraries/Boost/lib/boost_1_53_0</pElem>
+            <pElem>/../../Third_Party/Libraries/Boost/lib/boost_1_53_0</pElem>
           </linkerAddLib>
           <linkerLibItems>
             <linkerLibLibItem>boost_system</linkerLibLibItem>
