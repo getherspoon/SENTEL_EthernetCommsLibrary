@@ -31,7 +31,7 @@ DEFAULTCONF=Debug_MinGW
 CONF=${DEFAULTCONF}
 
 # All Configurations
-ALLCONFS=Debug_MinGW Debug_GCC Release_MinGW Release_GCC 
+ALLCONFS=Debug_MinGW Debug_MinGW_Static Debug_GCC Release_MinGW Release_GCC 
 
 
 # build

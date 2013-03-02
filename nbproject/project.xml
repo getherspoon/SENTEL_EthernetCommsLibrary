@@ -18,6 +18,10 @@
                     <type>2</type>
                 </confElem>
                 <confElem>
+                    <name>Debug_MinGW_Static</name>
+                    <type>3</type>
+                </confElem>
+                <confElem>
                     <name>Debug_GCC</name>
                     <type>2</type>
                 </confElem>
