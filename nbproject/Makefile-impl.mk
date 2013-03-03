@@ -24,14 +24,14 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=EthernetCommsLibrary
+PROJECTNAME=SENTEL_EthernetCommsLibrary
 
 # Active Configuration
 DEFAULTCONF=Debug_MinGW
 CONF=${DEFAULTCONF}
 
 # All Configurations
-ALLCONFS=Debug_MinGW Debug_MinGW_Static Debug_GCC Release_MinGW Release_GCC 
+ALLCONFS=Debug_MinGW Debug_MinGW_Static Debug_GCC Debug_GCC_Static Release_MinGW Release_GCC 
 
 
 # build

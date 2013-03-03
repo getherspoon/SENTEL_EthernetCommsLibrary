@@ -21,8 +21,8 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=MinGW_Latest-Windows
-CND_DLIB_EXT=dll
+CND_PLATFORM=GNU-MacOSX
+CND_DLIB_EXT=dylib
 CND_CONF=Debug_MinGW_Static
 CND_DISTDIR=dist
 CND_BUILDDIR=build
@@ -81,7 +81,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=-L../../Third_Party/Libraries/Boost/lib -lboost_system-mgw47-mt-sd-1_53 -lboost_thread-mgw47-mt-sd-1_53 -static -lws2_32 build/${CND_CONF}/${CND_PLATFORM}/EthernetCommsLibrary.o
+LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}

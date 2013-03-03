@@ -26,6 +26,10 @@
                     <type>2</type>
                 </confElem>
                 <confElem>
+                    <name>Debug_GCC_Static</name>
+                    <type>3</type>
+                </confElem>
+                <confElem>
                     <name>Release_MinGW</name>
                     <type>2</type>
                 </confElem>
