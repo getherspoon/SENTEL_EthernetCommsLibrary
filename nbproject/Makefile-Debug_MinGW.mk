@@ -21,8 +21,8 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=GNU-MacOSX
-CND_DLIB_EXT=dylib
+CND_PLATFORM=MinGW_Latest-Windows
+CND_DLIB_EXT=dll
 CND_CONF=Debug_MinGW
 CND_DISTDIR=dist
 CND_BUILDDIR=build
@@ -81,7 +81,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=-L../../Third_Party/Libraries/Boost/lib -lboost_system-mgw47-mt-sd-1_53 -lboost_thread-mgw47-mt-sd-1_53 -static -lws2_32 build/${CND_CONF}/${CND_PLATFORM}/EthernetCommsLibrary.o
+LDLIBSOPTIONS=-L../../Libraries/Third_Party/Boost/lib -lboost_system-mgw47-mt-sd-1_53 -lboost_thread-mgw47-mt-sd-1_53 -static -lws2_32 build/${CND_CONF}/${CND_PLATFORM}/EthernetCommsLibrary.o
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
@@ -91,152 +91,152 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libEthernetComms_D.${CND_DLIB_EXT}: b
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libEthernetComms_D.${CND_DLIB_EXT}: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libEthernetComms_D.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -dynamiclib -install_name libEthernetComms_D.${CND_DLIB_EXT} -fPIC
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libEthernetComms_D.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared
 
 ${OBJECTDIR}/AsyncConnectionlessReceiver.o: AsyncConnectionlessReceiver.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncConnectionlessReceiver.o AsyncConnectionlessReceiver.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncConnectionlessReceiver.o AsyncConnectionlessReceiver.cpp
 
 ${OBJECTDIR}/AsyncConnectionlessSender.o: AsyncConnectionlessSender.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncConnectionlessSender.o AsyncConnectionlessSender.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncConnectionlessSender.o AsyncConnectionlessSender.cpp
 
 ${OBJECTDIR}/AsyncMulticastComms.o: AsyncMulticastComms.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncMulticastComms.o AsyncMulticastComms.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncMulticastComms.o AsyncMulticastComms.cpp
 
 ${OBJECTDIR}/AsyncMulticastCommsImpl.o: AsyncMulticastCommsImpl.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncMulticastCommsImpl.o AsyncMulticastCommsImpl.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncMulticastCommsImpl.o AsyncMulticastCommsImpl.cpp
 
 ${OBJECTDIR}/AsyncMulticastReceiver.o: AsyncMulticastReceiver.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncMulticastReceiver.o AsyncMulticastReceiver.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncMulticastReceiver.o AsyncMulticastReceiver.cpp
 
 ${OBJECTDIR}/AsyncMulticastSender.o: AsyncMulticastSender.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncMulticastSender.o AsyncMulticastSender.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncMulticastSender.o AsyncMulticastSender.cpp
 
 ${OBJECTDIR}/AsyncTCPComms.o: AsyncTCPComms.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncTCPComms.o AsyncTCPComms.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncTCPComms.o AsyncTCPComms.cpp
 
 ${OBJECTDIR}/AsyncTCPCommsSendRecv.o: AsyncTCPCommsSendRecv.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncTCPCommsSendRecv.o AsyncTCPCommsSendRecv.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncTCPCommsSendRecv.o AsyncTCPCommsSendRecv.cpp
 
 ${OBJECTDIR}/AsyncUDPComms.o: AsyncUDPComms.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncUDPComms.o AsyncUDPComms.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncUDPComms.o AsyncUDPComms.cpp
 
 ${OBJECTDIR}/AsyncUDPCommsImpl.o: AsyncUDPCommsImpl.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncUDPCommsImpl.o AsyncUDPCommsImpl.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncUDPCommsImpl.o AsyncUDPCommsImpl.cpp
 
 ${OBJECTDIR}/AsyncUDPReceiver.o: AsyncUDPReceiver.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncUDPReceiver.o AsyncUDPReceiver.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncUDPReceiver.o AsyncUDPReceiver.cpp
 
 ${OBJECTDIR}/AsyncUDPSender.o: AsyncUDPSender.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncUDPSender.o AsyncUDPSender.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/AsyncUDPSender.o AsyncUDPSender.cpp
 
 ${OBJECTDIR}/CommsUtilities.o: CommsUtilities.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/CommsUtilities.o CommsUtilities.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/CommsUtilities.o CommsUtilities.cpp
 
 ${OBJECTDIR}/EthernetCommsModule.o: EthernetCommsModule.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/EthernetCommsModule.o EthernetCommsModule.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/EthernetCommsModule.o EthernetCommsModule.cpp
 
 ${OBJECTDIR}/NetworkUtilities.o: NetworkUtilities.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/NetworkUtilities.o NetworkUtilities.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/NetworkUtilities.o NetworkUtilities.cpp
 
 ${OBJECTDIR}/SyncConnectionlessReceiver.o: SyncConnectionlessReceiver.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncConnectionlessReceiver.o SyncConnectionlessReceiver.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncConnectionlessReceiver.o SyncConnectionlessReceiver.cpp
 
 ${OBJECTDIR}/SyncConnectionlessSender.o: SyncConnectionlessSender.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncConnectionlessSender.o SyncConnectionlessSender.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncConnectionlessSender.o SyncConnectionlessSender.cpp
 
 ${OBJECTDIR}/SyncMulticastComms.o: SyncMulticastComms.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncMulticastComms.o SyncMulticastComms.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncMulticastComms.o SyncMulticastComms.cpp
 
 ${OBJECTDIR}/SyncMulticastCommsImpl.o: SyncMulticastCommsImpl.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncMulticastCommsImpl.o SyncMulticastCommsImpl.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncMulticastCommsImpl.o SyncMulticastCommsImpl.cpp
 
 ${OBJECTDIR}/SyncMulticastReceiver.o: SyncMulticastReceiver.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncMulticastReceiver.o SyncMulticastReceiver.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncMulticastReceiver.o SyncMulticastReceiver.cpp
 
 ${OBJECTDIR}/SyncMulticastSender.o: SyncMulticastSender.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncMulticastSender.o SyncMulticastSender.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncMulticastSender.o SyncMulticastSender.cpp
 
 ${OBJECTDIR}/SyncTCPComms.o: SyncTCPComms.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncTCPComms.o SyncTCPComms.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncTCPComms.o SyncTCPComms.cpp
 
 ${OBJECTDIR}/SyncTCPCommsSendRecv.o: SyncTCPCommsSendRecv.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncTCPCommsSendRecv.o SyncTCPCommsSendRecv.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncTCPCommsSendRecv.o SyncTCPCommsSendRecv.cpp
 
 ${OBJECTDIR}/SyncUDPComms.o: SyncUDPComms.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncUDPComms.o SyncUDPComms.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncUDPComms.o SyncUDPComms.cpp
 
 ${OBJECTDIR}/SyncUDPCommsImpl.o: SyncUDPCommsImpl.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncUDPCommsImpl.o SyncUDPCommsImpl.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncUDPCommsImpl.o SyncUDPCommsImpl.cpp
 
 ${OBJECTDIR}/SyncUDPReceiver.o: SyncUDPReceiver.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncUDPReceiver.o SyncUDPReceiver.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncUDPReceiver.o SyncUDPReceiver.cpp
 
 ${OBJECTDIR}/SyncUDPSender.o: SyncUDPSender.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncUDPSender.o SyncUDPSender.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/SyncUDPSender.o SyncUDPSender.cpp
 
 ${OBJECTDIR}/TCPComms.o: TCPComms.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/TCPComms.o TCPComms.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/TCPComms.o TCPComms.cpp
 
 ${OBJECTDIR}/TCPCommsImpl.o: TCPCommsImpl.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/TCPCommsImpl.o TCPCommsImpl.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/TCPCommsImpl.o TCPCommsImpl.cpp
 
 build/${CND_CONF}/${CND_PLATFORM}/EthernetCommsLibrary.o: res/EthernetCommsLibrary.rc 
 	${MKDIR} -p build/${CND_CONF}/${CND_PLATFORM}
@@ -246,7 +246,7 @@ build/${CND_CONF}/${CND_PLATFORM}/EthernetCommsLibrary.o: res/EthernetCommsLibra
 ${OBJECTDIR}/stdafx.o: stdafx.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Third_Party/Libraries/Boost/include/boost_1_53_0 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/stdafx.o stdafx.cpp
+	$(COMPILE.cc) -g -DBOOST_DISABLE_ASSERTS -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_THREAD_USE_LIB -DETHERNETCOMMS_EXPORTS -DNO_MFC -D_DEBUG -IBoostAsioConnections -I../../Libraries/Third_Party/Boost/include/boost_1_53_0 -I.  -MMD -MP -MF $@.d -o ${OBJECTDIR}/stdafx.o stdafx.cpp
 
 # Subprojects
 .build-subprojects:
