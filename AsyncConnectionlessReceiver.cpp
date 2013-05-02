@@ -47,7 +47,7 @@ CAsyncConnectionlessReceiver::~CAsyncConnectionlessReceiver()
     boost::system::error_code bstError;
 	if( !this->TerminateReceiver( bstError ) )
 	{
-		ASSERT( false );
+		TRACE("%s: ERROR: %s\n", __FUNCTION__, bstError.message().c_str() );
 	}  
 }
 
@@ -86,16 +86,18 @@ bool CAsyncConnectionlessReceiver::TerminateReceiver( boost::system::error_code&
 {
      bool bResult = false;
      try
-     {
-		ASSERT( this->m_bstSocket.get() );
-		if( this->m_bstSocket->is_open() )
+     {		
+		if( this->m_bstSocket.get() )
 		{
-			this->m_bstSocket->close( p_bstError );          
-			bResult = ( !p_bstError );
-		}
-		else
-		{
-			bResult = true;
+			if( this->m_bstSocket->is_open() )
+			{
+				this->m_bstSocket->close( p_bstError );          
+				bResult = ( !p_bstError );
+			}
+			else
+			{
+				bResult = true;
+			}
 		}
      }
      catch( std::exception& ex )

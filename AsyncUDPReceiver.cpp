@@ -98,7 +98,6 @@ bool CAsyncUDPReceiver::InitializeReceiver( boost::system::error_code& p_bstErro
     {
 		std::string strEx = ex.what();
 		TRACE( "%s: EXCEPTION: %s\n", __FUNCTION__, strEx.c_str() );
-		ASSERT( false );		
 		bResult = false;
     }
     return bResult;

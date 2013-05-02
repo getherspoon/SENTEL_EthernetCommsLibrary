@@ -22,14 +22,12 @@ CSyncConnectionlessReceiver::CSyncConnectionlessReceiver( boost::asio::io_servic
 {	
 	m_pBstIOService = &p_bstIOService;
 
-	this->m_bstWork.reset( new boost::asio::io_service::work( p_bstIOService ) );        
-	// this->m_bstLock.initialize();
+	this->m_bstWork.reset( new boost::asio::io_service::work( p_bstIOService ) );	
 }
 
 // Destructor
 CSyncConnectionlessReceiver::~CSyncConnectionlessReceiver()
-{
-	// this->m_bstLock.destroy();
+{	
 }
 
 // Receive

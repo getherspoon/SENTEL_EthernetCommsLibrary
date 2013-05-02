@@ -74,7 +74,7 @@ bool CSyncTCPCommsSendRecv::Read(std::string& p_strMsg, boost::system::error_cod
 		}
 		if( !this->IsConnected() )
 		{
-			TRACE("%s: WARNING: Could not connect to remote host! Read command was not sent!\n", __FUNCTION__ );
+			TRACE("%s: WARNING: %s\n", __FUNCTION__, "Could not connect to remote host! Read command was not sent!\n");
 		}
 		else
 		{
